@@ -34,7 +34,7 @@ function VideoList(props) {
 }
 
 export default function App() {
-    const [list, setList] = useState([
+    const [list] = useState([
         {
             url: 'https://rutube.ru/play/embed/cfe464c34c3ac4e16349622c3c24fce5/',
             date: moment(Date.now()).subtract(51, 'm')
