@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 20.12.0
           cache: 'npm'
-      - run: npm
+      - run: npm install
       - run: npm lint
 
   test:
@@ -40,7 +40,7 @@ jobs:
         with:
           node-version: 20.11.0
           cache: 'npm'
-      - run: npm
+      - run: npm install
       - run: npm test
 
   build:
@@ -59,7 +59,7 @@ jobs:
         with:
           node-version: 20.11.0
           cache: 'npm'
-      - run: npm
+      - run: npm install
       - run: npm build
       - name: Setup Pages
         uses: actions/configure-pages@v4
